@@ -1,0 +1,27 @@
+<html>
+    <script>
+    // Recebe os valores informados pelo usuário
+    const num1 = parseFloat(prompt("Digite o primeiro número:"));
+    const num2 = parseFloat(prompt("Digite o segundo número:"));
+    const num3 = parseFloat(prompt("Digite o terceiro número:"));
+    const num4 = parseFloat(prompt("Digite o quarto número:"));
+
+// Encontra o maior número entre os quatro informados
+    let maior = num1;
+    if (num2 > maior) {
+    maior = num2;
+    }
+    if (num3 > maior) {
+    maior = num3;
+    }
+    if (num4 > maior) {
+    maior = num4;
+    }
+
+// Exibe o primeiro, o último e o maior número informado
+    alert(`O primeiro número é: ${num1}`);
+    alert(`O último número é: ${num4}`);
+    alert(`O maior número é: ${maior}`);
+
+    </script>
+</html>

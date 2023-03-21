@@ -1,0 +1,28 @@
+<html>
+    <script>
+        // Solicita ao usuário que informe 3 valores diferentes
+    let valor1 = parseFloat(prompt("Informe o primeiro valor:"));
+    let valor2 = parseFloat(prompt("Informe o segundo valor:"));
+    let valor3 = parseFloat(prompt("Informe o terceiro valor:"));
+
+// Verifica qual dos valores é o maior e qual é o menor
+    let maior, menor;
+    if (valor1 > valor2 && valor1 > valor3) {
+    maior = valor1;
+    menor = Math.min(valor2, valor3);
+    } else if (valor2 > valor1 && valor2 > valor3) {
+    maior = valor2;
+    menor = Math.min(valor1, valor3);
+    } else {
+    maior = valor3;
+    menor = Math.min(valor1, valor2);
+    }
+
+
+// Calcula a soma dos 2 maiores valores e exibe o resultado
+    let soma = maior + menor;
+    alert(`A soma dos 2 maiores valores é ${soma}.`);
+
+
+    </script>
+</html>

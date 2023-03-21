@@ -1,0 +1,24 @@
+<html>
+<script>
+// Define um array para armazenar os valores informados pelo usuário
+const numeros = [];
+
+// Lê os 6 números informados pelo usuário e armazena no array
+for (let i = 1; i <= 6; i++) {
+  const num = parseFloat(prompt(`Digite o ${i}º número:`));
+  numeros.push(num);
+}
+
+// Soma todos os números com valor inferior a 72
+let soma = 0;
+for (const num of numeros) {
+  if (num < 72) {
+    soma += num;
+  }
+}
+
+// Exibe o valor final da soma e todos os valores informados
+console.log(`Valor final da soma: ${soma}`);
+console.log(`Valores informados: ${numeros.join(", ")}`);
+</script>
+</html>

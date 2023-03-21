@@ -1,0 +1,18 @@
+<html>
+    <script>
+        let soma = 0;
+let media = 0;
+let valores = [];
+
+for (let i = 0; i < 6; i++) {
+  valores[i] = parseInt(prompt("Digite o " + (i + 1) + "º valor:"));
+  soma += valores[i];
+}
+
+media = soma / 6;
+
+alert("Valores informados: " + valores.join(", "));
+alert("Média aritmética: " + media);
+
+    </script>
+</html>

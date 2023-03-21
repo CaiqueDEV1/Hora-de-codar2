@@ -1,0 +1,18 @@
+<html>
+    <script>
+    altura = parseFloat(prompt("Digite a altura em metros: "))
+    sexo = prompt("Digite o sexo (F para feminino ou M para masculino): ")
+
+    if (sexo == 'f') {
+    sexo = sexo.toLowerCase()
+    let peso_ideal = (62.1 * altura) - 44.7
+    alert("O peso ideal é:", round(peso_ideal, 2), "kg")
+    }
+    else if (sexo == 'm'){
+    peso_ideal = (72.7 * altura) - 58
+    alert("O peso ideal é:", round(peso_ideal, 2), "kg")
+    }else{ 
+    alert("Sexo inválido.")
+    }
+    </script>
+</html>
